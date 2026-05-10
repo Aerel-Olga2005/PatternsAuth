@@ -30,7 +30,7 @@ public class DataGenerator {
                .spec(requestSpec)
                .body(user)
                .when().log().all()
-               .post("/api/svstem/users")
+               .post("/api/system/users")
                .then().log().all()
                .statusCode(200);
     }
